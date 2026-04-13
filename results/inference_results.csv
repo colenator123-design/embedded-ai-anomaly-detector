@@ -1,0 +1,4 @@
+case,min,max,mean,latest,score,level
+normal_case,39.80,40.20,40.01,39.80,0.33,NORMAL
+warning_case,40.00,41.30,40.66,40.90,0.88,WARNING
+alert_case,39.80,45.20,42.43,45.20,4.35,ALERT

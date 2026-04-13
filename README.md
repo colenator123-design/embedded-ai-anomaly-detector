@@ -40,6 +40,13 @@ flowchart LR
     C --> D[System Decision Output]
 ```
 
+## Repository Layout
+
+- `projects/`: runnable C demos for each stage of the pipeline
+- `datasets/`: deterministic sample windows used for experiments
+- `results/`: recorded outputs for classification and alert-state behavior
+- `docs/`: architecture and experiment documentation
+
 ## Roadmap
 
 1. `01-sensor-pipeline`
@@ -105,3 +112,26 @@ Key outcomes:
 - moderate drift/spread can be promoted to `WARNING`
 - large excursions trigger `ALERT`
 - the alert engine prevents immediate de-escalation through cooldown logic
+
+## Experiment Artifacts
+
+- `datasets/inference_windows.csv`
+- `datasets/alert_engine_windows.csv`
+- `results/inference_results.csv`
+- `results/alert_engine_timeline.csv`
+- `docs/ARCHITECTURE.md`
+- `docs/EXPERIMENTS.md`
+
+## Why This Is More Than a Demo
+
+This repository now has:
+
+- a modular pipeline split into sensing, inference, and alerting stages
+- deterministic datasets for repeatable evaluation
+- recorded result tables
+- chart-ready CSV outputs
+- architecture and experiment documents
+
+The goal is not to claim production readiness, but to show a more complete
+engineering prototype that combines firmware-style data flow with lightweight
+edge inference.
