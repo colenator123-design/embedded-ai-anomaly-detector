@@ -1,0 +1,5 @@
+.DS_Store
+
+projects/01-sensor-pipeline/sensor_pipeline_demo
+projects/02-lightweight-inference/lightweight_inference_demo
+projects/03-alert-engine/alert_engine_demo
